@@ -1,11 +1,15 @@
-** SafeSave Smart Contract ** 
+**SafeSave Smart Contract** 
 
 
 SafeSave is a solidity smart contract that runs on the ethereum blockchain.  
 
-It ensures that the wallet that deployed the contract (owner of the smart contract) is same as the person withdrawing the funds. 
+**Features** 
 
-** Functions ** 
+- It ensures that the wallet that deployed the contract (owner of the smart contract) is same as the person withdrawing the funds. 
+- Checks the amount the user is funding in wei to ensure it's more than $20. 
+- The withdrawal date can't be changed after being set. 
+
+**Functions** 
 
 - `setNumberOfDaysToSaveFunds()`: The setNumberOfDaysToSaveFunds enables the user to specify how many days they wish to save their funds before withdrawal. The withdrawal date can only be set once and it can be set even after depositing funds into the smart contract. 
 
